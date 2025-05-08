@@ -1,10 +1,10 @@
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const AuthService = require("../../services/authService");
 const UserService = require("../../services/userService");
 
 jest.mock("../../services/userService");
-jest.mock("bcrypt");
+jest.mock("bcryptjs");
 jest.mock("jsonwebtoken");
 
 // Mock process.env to control environment variables
