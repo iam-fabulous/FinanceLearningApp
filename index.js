@@ -24,6 +24,7 @@ app.use((err, req, res, next) => {
   res.status(400).json({ message: err.message });
 });
 
+// # mongodb://localhost:27017/financialApp
 // Connect to MongoDB and start server
 const port = process.env.PORT;
 mongoose
